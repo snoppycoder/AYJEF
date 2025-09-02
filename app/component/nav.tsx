@@ -13,8 +13,8 @@ export default function NavigationBar() {
       link: "/about",
     },
     {
-      name: "Learn More",
-      link: "/learn-more",
+      name: "Projects",
+      link: "/projects",
     },
     {
       name: "Contact us",
