@@ -10,12 +10,12 @@ export default function CTA() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <h1 className="text-4xl font-bold">
+        <h1 className="text-3xl font-bold mb-1.5">
           AYJEF Water Works & Business Services
         </h1>
       </motion.div>
 
-      <div className="relative z-20 w-full text-white p-6 text-center text-3xl font-extrabold">
+      <div className="relative z-20 w-full text-white p-6 text-center text-xl font-mono">
         Reliable Water Solutions & Business Services You Can Trust
       </div>
 
@@ -26,12 +26,12 @@ export default function CTA() {
         transition={{ duration: 1, delay: 0.5 }}
       >
         <Link href={"/contact"}>
-          <button className="bg-blue-200 px-6 py-2 rounded font-bold">
+          <button className="bg-blue-200 px-6 py-2 rounded font-bold cursor-pointer">
             Contact Us
           </button>
         </Link>
         <Link href={"/learn-more"}>
-          <button className="bg-amber-200 px-6 py-2 rounded font-bold">
+          <button className="bg-amber-200 px-6 py-2 rounded font-bold cursor-pointer">
             Learn More
           </button>
         </Link>
