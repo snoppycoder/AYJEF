@@ -32,7 +32,7 @@ export default function CTA() {
         </Link>
         <Link href={"/services"}>
           <button className="bg-amber-200 px-6 py-2 rounded font-bold cursor-pointer">
-            Our Services
+            Explore Projects
           </button>
         </Link>
       </motion.div>

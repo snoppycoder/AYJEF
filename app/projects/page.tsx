@@ -5,25 +5,25 @@ import ProjectCard from "../component/project-card";
 export default function Projects() {
   const projects = [
     {
-      src: "/logo.png",
+      src: "/badeno.jfif",
       detail:
         "Project: Ten Medium towns water supply and sanitation project in agreement with Oromia Water and Energy Bureau (Group IV- Bedeno town WaSH project):Contract Components: Feasibility study, Detail Design, Construction Supervision, contract administration; and capacity building. Client: Oromia Water and Energy Bureau (OWNP Coordination Office)Contact Person: Mr. Tamirat Abera, Telephone: +251 939264434",
     },
     {
-      src: "/logo.png",
+      src: "/watersupply.jpg",
       detail:
         " Project: Twenty one towns and Multi Villages Water Supply Projects in agreement with Oromia Water and Energy Bureau (Lot 5: Haro Sebu, Gembel and Jitu Water Supply Projects) Contract Components: Construction Supervision, contract administration Client: Oromia Water and Energy Bureau Contact Person: Eng. Gurmessa Oljira, Telephone: +251 947119750",
     },
     {
-      src: "/logo.png",
+      src: "/climate.jpg",
       detail:
         "Project: Development of Climate Resilient Water Resources Management Plans, Feasibility Study, Detail Design and Tender Document Preparation for Drinking Water and Small Scale Irrigation Infrastructure for Burka and Sofi kebeles in Sofi Woreda of Harari Region; and Wahil and Lege Oda Gununfeta kebeles in Wahil cluster of Diredawa City Administration",
     },
-    {
-      src: "/logo.png",
-      detail:
-        "Project: Development of Climate Resilient Water Resources Management Plans, Feasibility Study, Detail Design and Tender Document Preparation for Drinking Water and Small Scale Irrigation Infrastructure for Burka and Sofi kebeles in Sofi Woreda of Harari Region; and Wahil and Lege Oda Gununfeta kebeles in Wahil cluster of Diredawa City Administration",
-    },
+    // {
+    //   src: "/logo.png",
+    //   detail:
+    //     "Project: Development of Climate Resilient Water Resources Management Plans, Feasibility Study, Detail Design and Tender Document Preparation for Drinking Water and Small Scale Irrigation Infrastructure for Burka and Sofi kebeles in Sofi Woreda of Harari Region; and Wahil and Lege Oda Gununfeta kebeles in Wahil cluster of Diredawa City Administration",
+    // },
     {
       src: "/logo.png",
       detail:

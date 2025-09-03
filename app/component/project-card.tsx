@@ -37,7 +37,7 @@ export default function ProjectCard({
         />
       </div>
 
-      <div className="p-2">
+      <div className="p-2 bg-white">
         <h2 className="text-center text-lg font-bold mb-1">Detail</h2>
         <p className="text-md text-gray-700">{detail}</p>
       </div>

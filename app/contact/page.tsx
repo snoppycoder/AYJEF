@@ -1,6 +1,6 @@
 export default function ContactUs() {
   return (
-    <div className="w-screen min-h-screen grid grid-cols-1 md:grid-cols-4 px-4 md:px-8 py-6 gap-x-6 bg-blue-100">
+    <div className="w-screen min-h-screen grid grid-cols-1 md:grid-cols-4 px-4 md:px-8 py-6 gap-y-10 md:gap-y-2 md:gap-x-6 bg-blue-100">
       <div className="col-span-2">
         <h1 className="text-3xl font-bold ">Contact us</h1>
         <p>
@@ -42,7 +42,7 @@ export default function ContactUs() {
           <div className="flex flex-col md:flex-row gap-4">
             <input
               type="text"
-              className="input input-info"
+              className="input input-info "
               placeholder="First Name"
               required
             />
