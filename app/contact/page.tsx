@@ -8,8 +8,11 @@ export default function ContactUs() {
           you as soon as possible.
         </p>
         <address>
-          <p>AYJF-info@gmail.com</p>
-          <p>+251912131415</p>
+          <p>Email AYJF-info@gmail.com</p>
+          <p>Mobile +251 911 30 40 19</p>
+          <p>Sub City Nifas Silk Lafto</p>
+          <p>Woreda 12</p>
+          <p>Location Addis Ababa, Ethiopia</p>
         </address>
         <div className=" mt-6 mb-6 w-full"></div>
         <div className="grid grid-cols-2 gap-x-3.5">
