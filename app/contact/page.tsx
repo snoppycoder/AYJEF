@@ -66,7 +66,7 @@ export default function ContactUs() {
               +251
             </span>
             <input
-              type="number"
+              type="tel"
               className="flex-1 input input-accent rounded-r-md"
               placeholder="Phone Number"
               required

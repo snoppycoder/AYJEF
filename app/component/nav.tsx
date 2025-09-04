@@ -21,16 +21,38 @@ export default function NavigationBar() {
       link: "/contact",
     },
   ];
+  const [selected, setSelected] = useState(0);
 
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="bg-blue-950 p-4 text-white font-bold relative ">
-      <div className="hidden  md:flex justify-evenly w-full">
-        <div className="absolute left-12 p-2 w-8 h-8 rounded-full bg-[url('/nav-logo.png')] bg-cover bg-center cursor-pointer">
-          <a href={"/"}></a>
+    <nav className="w-full bg-blue-950 p-6 md:py-2 text-white font-bold relative ">
+      <div className=" hidden  md:flex justify-between items-center w-full">
+        <div className="flex flex-col items-center">
+          <Link
+            href={"/"}
+            onClick={() => {
+              setSelected(0);
+            }}
+          >
+            <div className="w-10 h-10 rounded-full bg-[url('/nav-logo.png')] bg-cover bg-center cursor-pointer"></div>
+          </Link>
+
+          <span className="font-mono text-sm font-light mt-1">
+            AYJEF Water Works
+          </span>
         </div>
-        {listOfLinks.map((item) => (
-          <Link key={item.name} href={item.link}>
+
+        {listOfLinks.map((item, index) => (
+          <Link
+            key={item.name}
+            href={item.link}
+            onClick={() => {
+              setSelected(index);
+            }}
+            className={`mx-4 px-2 py-1  rounded ${
+              selected === index ? "text-yellow-500" : "hover:text-amber-600"
+            }`}
+          >
             {item.name}
           </Link>
         ))}
@@ -41,7 +63,7 @@ export default function NavigationBar() {
           onClick={() => {
             setIsOpen(!isOpen);
           }}
-          className="absolute  top-0 right-0 text-white"
+          className="absolute top-4 right-4 text-white"
         >
           {!isOpen ? <Menu></Menu> : <X></X>}
         </button>
@@ -54,7 +76,13 @@ export default function NavigationBar() {
         >
           {listOfLinks.map((item) => (
             <div className="flex flex-col text-center font-normal">
-              <Link key={item.name} href={item.link}>
+              <Link
+                key={item.name}
+                href={item.link}
+                onClick={() => {
+                  setIsOpen(false);
+                }}
+              >
                 {item.name}
               </Link>
               <hr />
