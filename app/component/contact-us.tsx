@@ -34,7 +34,7 @@ export default function ContactUsForm() {
           />
         </div>
         <div className="w-full flex">
-          <span className="bg-gray-100 text-gray-800 px-3 flex items-center rounded-l-md">
+          <span className="bg-gray-100 text-gray-800 px-3 flex items-center rounded-md">
             +251
           </span>
           <input
