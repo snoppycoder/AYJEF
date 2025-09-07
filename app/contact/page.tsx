@@ -48,18 +48,26 @@ export default function ContactUs() {
 
         <span>Check us out on our other outlets </span>
         <div className="flex gap-4 mt-2">
-          <div className="flex items-center justify-center rounded-full bg-black p-3 ">
+          <div className="flex items-center justify-center rounded-full bg-black p-3 cursor-pointer">
             <Facebook color="white" href="" strokeWidth={2} />
           </div>
-          <div className="flex items-center justify-center rounded-full bg-black p-3 ">
+          <div className="flex items-center justify-center rounded-full bg-black p-3 cursor-pointer ">
             <LinkedinIcon color="white" href="" strokeWidth={2} />
           </div>
-          <div className="flex items-center justify-center rounded-full bg-black p-3 ">
+          <div className="flex items-center justify-center rounded-full bg-black p-3 cursor-pointer ">
             <Rss color="white" href="" strokeWidth={2} />
           </div>
         </div>
       </div>
       <ContactUsForm />
+      <div className="w-full max-w-full col-span-1 md:col-span-4 mt-5 ">
+        {/* map */}
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.072905432567!2d38.72970237402407!3d8.965429791093404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8115d4e5584f%3A0x4393756bd19de938!2sAyjef%20Water%20Works%20And%20Business%20Service%20Plc!5e0!3m2!1sen!2set!4v1757263222932!5m2!1sen!2set"
+          className="w-full h-36 rounded-lg border-0"
+          loading="lazy"
+        ></iframe>
+      </div>
     </div>
   );
 }

@@ -21,6 +21,7 @@ export default function About() {
               src="/mission-vision.jfif"
               height={100}
               width={200}
+              className="hidden lg:block"
               alt="mission and vision"
             />
             <p>
