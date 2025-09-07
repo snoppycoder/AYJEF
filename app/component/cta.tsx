@@ -30,7 +30,7 @@ export default function CTA() {
             Contact Us
           </button>
         </Link>
-        <Link href={"/services"}>
+        <Link href={"/projects"}>
           <button className="bg-amber-200 px-6 py-2 rounded font-bold cursor-pointer">
             Explore Projects
           </button>

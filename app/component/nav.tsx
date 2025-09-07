@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { ClosedCaptionIcon, Menu, X } from "lucide-react";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 export default function NavigationBar() {
   const listOfLinks = [
     {
@@ -21,19 +22,14 @@ export default function NavigationBar() {
       link: "/contact",
     },
   ];
-  const [selected, setSelected] = useState(0);
 
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="w-full bg-blue-950 p-6 md:py-2 text-white font-bold relative ">
+    <nav className="w-full bg-[#222831] p-6 md:py-2 text-white font-bold relative ">
       <div className=" hidden  md:flex justify-between items-center w-full">
         <div className="flex flex-col items-center">
-          <Link
-            href={"/"}
-            onClick={() => {
-              setSelected(0);
-            }}
-          >
+          <Link href={"/"}>
             <div className="w-10 h-10 rounded-full bg-[url('/nav-logo.png')] bg-cover bg-center cursor-pointer"></div>
           </Link>
 
@@ -46,11 +42,10 @@ export default function NavigationBar() {
           <Link
             key={item.name}
             href={item.link}
-            onClick={() => {
-              setSelected(index);
-            }}
             className={`mx-4 px-2 py-1  rounded ${
-              selected === index ? "text-yellow-500" : "hover:text-amber-600"
+              pathname === item.link
+                ? "text-yellow-500"
+                : "hover:text-amber-600"
             }`}
           >
             {item.name}

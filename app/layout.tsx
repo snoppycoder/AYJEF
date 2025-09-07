@@ -31,10 +31,10 @@ export default function RootLayout({
       >
         <NavigationBar />
         {children}
-        <footer className="bg-gray-900 text-gray-300 py-6 ">
+        <footer className="bg-blue-50 text-gray-300 py-6 ">
           <div className="container ">
             {/* Left side */}
-            <p className="text-sm text-center">
+            <p className="text-sm text-center text-black">
               © {new Date().getFullYear()} AYJEF PLC. All rights reserved.
             </p>
           </div>

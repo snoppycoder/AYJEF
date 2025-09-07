@@ -25,17 +25,17 @@ export default function Projects() {
     //     "Project: Development of Climate Resilient Water Resources Management Plans, Feasibility Study, Detail Design and Tender Document Preparation for Drinking Water and Small Scale Irrigation Infrastructure for Burka and Sofi kebeles in Sofi Woreda of Harari Region; and Wahil and Lege Oda Gununfeta kebeles in Wahil cluster of Diredawa City Administration",
     // },
     {
-      src: "/logo.png",
+      src: "/placeholder.png",
       detail:
         "Project: Technical Assistance to Selected woredas of Borena and West Guji zones (Gelana, Bule Hora, Yaballo, Arero, Dhas, Teltelle and Moyale) for preparation and implementation of Rural WaSHP Sub-component Contract Components: Capacity building and Construction Supervision Client: Oromia Water and Energy Bureau (OWNP Coordination Office) Contact Person: Mr. Tsige Getachew Telephone: +251 913660156",
     },
     {
-      src: "/logo.png",
+      src: "/placeholder.png",
       detail:
         "Project: Technical Assistance to Genji and Kumbabe Towns for planning and Implementation of Towns Water Supply and Sanitation Improvement Programs Contract Components: Design Review, Contract Administration, Construction Supervision; and Capacity building Client: Oromia Water and Energy Bureau Contact Person: Girma Telephone: +251 913660156",
     },
     {
-      src: "/logo.png",
+      src: "/placeholder.png",
       detail:
         "Project: Twenty two towns and multi villages Water Supply Study and Design Project in agreement with Oromia Water and Energy Bureau (Lot 5 projects/ Obora, Kiltu Kara and Lalo towns Water Supply Projects): Client: Oromia Water and Energy Bureau Contact Person: Mr. Abreham Gebisa, Telephone: +251 923608870",
     },

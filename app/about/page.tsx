@@ -8,7 +8,25 @@ export default function About() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1.5 }}
       >
-        <h1 className="font-bold text-2xl text-center">About us</h1>
+        <h2 className="text-xl font-semibold text-center">
+          Our Vision and Mission
+        </h2>
+        <div className="bg-white p-6 rounded-xl leading-relaxed shadow-lg ">
+          <div>
+            AYJEF Water Works and Business Service PLC aspires to see itself to
+            be efficient, effective and competent consultancy service providing
+            firm on water works and other development activities.
+          </div>
+
+          <div>
+            AYJEF Water Works and Business Service PLC intends to provide
+            professional Consultancy services to implementing agents on water
+            works and other development activities. To attain these mottos, the
+            company makes use of qualified experienced & relevant staff and
+            adopts result based management and participatory approaches; and
+            focuses on effective and efficient services
+          </div>
+        </div>
       </motion.div>
       <motion.div
         initial={{ x: -80, opacity: 0 }}
@@ -65,23 +83,7 @@ export default function About() {
           <li>Creativity of staff</li>
         </ul>
       </div>
-      <h2 className="text-xl font-semibold text-center">Vision and Mission</h2>
-      <div className="bg-white p-6 rounded-xl leading-relaxed shadow-lg ">
-        <div>
-          AYJEF Water Works and Business Service PLC aspires to see itself to be
-          efficient, effective and competent consultancy service providing firm
-          on water works and other development activities.
-        </div>
 
-        <div>
-          AYJEF Water Works and Business Service PLC intends to provide
-          professional Consultancy services to implementing agents on water
-          works and other development activities. To attain these mottos, the
-          company makes use of qualified experienced & relevant staff and adopts
-          result based management and participatory approaches; and focuses on
-          effective and efficient services
-        </div>
-      </div>
       <h2 className="text-xl font-semibold text-center">
         Strategic Objectives
       </h2>
