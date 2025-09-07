@@ -1,5 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import { Award, CheckCircle, Eye, Target } from "lucide-react";
+import TechnicalQualification from "../component/qual";
 export default function About() {
   return (
     <div className="w-full min-h-screen px-4 py-8 flex flex-col gap-y-6 bg-gradient-to-r from-blue-100 to-blue-50">
@@ -8,23 +11,30 @@ export default function About() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1.5 }}
       >
-        <h2 className="text-xl font-semibold text-center">
-          Our Vision and Mission
-        </h2>
-        <div className="bg-white p-6 rounded-xl leading-relaxed shadow-lg ">
-          <div>
-            AYJEF Water Works and Business Service PLC aspires to see itself to
-            be efficient, effective and competent consultancy service providing
-            firm on water works and other development activities.
+        <div className="bg-white p-6 rounded-xl leading-relaxed shadow-lg  ">
+          <div className="flex items-center justify-center gap-2 text-2xl font-bold text-blue-700 mb-4">
+            <Eye className="w-6 h-6 text-blue-500" />
+            Our vision & mission
           </div>
-
-          <div>
-            AYJEF Water Works and Business Service PLC intends to provide
-            professional Consultancy services to implementing agents on water
-            works and other development activities. To attain these mottos, the
-            company makes use of qualified experienced & relevant staff and
-            adopts result based management and participatory approaches; and
-            focuses on effective and efficient services
+          <div className="flex">
+            <Image
+              src="/mission-vision.jfif"
+              height={100}
+              width={200}
+              alt="mission and vision"
+            />
+            <p>
+              AYJEF Water Works and Business Service PLC aspires to see itself
+              to be efficient, effective and competent consultancy service
+              providing firm on water works and other development activities.{" "}
+              <br />
+              AYJEF Water Works and Business Service PLC intends to provide
+              professional Consultancy services to implementing agents on water
+              works and other development activities. To attain these mottos,
+              the company makes use of qualified experienced & relevant staff
+              and adopts result based management and participatory approaches;
+              and focuses on effective and efficient services
+            </p>
           </div>
         </div>
       </motion.div>
@@ -34,6 +44,10 @@ export default function About() {
         transition={{ duration: 1.5 }}
         className="bg-white p-6 rounded-xl leading-relaxed shadow-lg "
       >
+        <div className="flex items-center justify-center gap-2 text-2xl font-bold text-blue-700 mb-4">
+          <Award className="w-6 h-6 text-blue-500" />
+          About Us
+        </div>
         <div>
           AYJEF Water Works and Business Service PLC is a private limited
           company established by professional associates with very rich
@@ -49,12 +63,17 @@ export default function About() {
           AYJEF Water Works and Business Service PLC has accreditation
           certificates consisting of Eligibility Certificates from:
           <ul className="list-disc list-inside  text-gray-700">
-            <li>
+            <li className="flex items-start gap-2">
+              <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
               Ministry of Water and Energy (as represented by Oromia Bureau of
               Water, Mineral and Energy),
             </li>
-            <li>Ethiopian Management Institute (EMI),</li>
-            <li>
+            <li className="flex items-start gap-2">
+              <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+              Ethiopian Management Institute (EMI),
+            </li>
+            <li className="flex items-start gap-2">
+              <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
               value added tax (VAT) registration certificates from Revenue and
               Customs Authority (the former ERCA).
             </li>
@@ -70,37 +89,63 @@ export default function About() {
           Water Works Consultancy and Management Consultancy.
         </div>
       </motion.div>
-      <h2 className="text-xl font-semibold text-center">
-        Principles and Values
-      </h2>
       <div className="bg-white p-6 rounded-xl leading-relaxed shadow-lg ">
+        <div className="flex items-center justify-center gap-2 text-2xl font-bold text-blue-700 mb-4">
+          {/* <Award className="w-6 h-6 text-blue-500" /> */}
+          Principles and Values
+        </div>
         The company's principles and values include:
         <ul className="list-disc list-inside  text-gray-700">
-          <li>Result based management</li>
-          <li>Efficiency and effectiveness</li>
-          <li>Quality professional and /or technical services</li>
-          <li>Staff commitment and dedication</li>
-          <li>Creativity of staff</li>
+          <motion.div
+            initial={{ x: -80, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1.5 }}
+          >
+            <li className="flex items-start gap-2">
+              <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+              Result based management
+            </li>
+            <li className="flex items-start gap-2">
+              <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+              Efficiency and effectiveness
+            </li>
+            <li className="flex items-start gap-2">
+              <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+              Quality professional and /or technical services
+            </li>
+            <li className="flex items-start gap-2">
+              <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+              Staff commitment and dedication
+            </li>
+            <li className="flex items-start gap-2">
+              <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+              Creativity of staff
+            </li>
+          </motion.div>
         </ul>
       </div>
 
-      <h2 className="text-xl font-semibold text-center">
-        Strategic Objectives
-      </h2>
       <div className="bg-white p-6 rounded-xl leading-relaxed shadow-lg ">
+        <div className="flex items-center justify-center gap-2 text-2xl font-bold text-blue-700 mb-4">
+          <Target className="w-6 h-6 text-blue-500" />
+          Strategic Objectives
+        </div>
         The strategic objectives of the company has emanated from its overall
         mission. As a result, the major objectives of the company include:
         <ul className="list-disc list-inside  text-gray-700">
-          <li>
+          <li className="flex items-start gap-2">
+            <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
             To produce standardized study based/ research based documents so as
             to enable the clientele make use of it accordingly,
           </li>
-          <li>
+          <li className="flex items-start gap-2">
+            <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
             To improve implementation and management capacity of implementing
             agents through provision of consultancy services/ technical supports
             for the same,
           </li>
-          <li>
+          <li className="flex items-start gap-2">
+            <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
             To improve implementation and management capacity of implementing
             agents through provision of feasible and timely trainings/capacity
             building.
@@ -118,60 +163,7 @@ export default function About() {
         services possible with a great sense of responsibility, integrity and
         accountability to our clients and the public at large.
       </div>
-      <h2 className="text-xl font-semibold text-center">
-        Areas Of Technical Qualification
-      </h2>
-      <div className="bg-white p-6 rounded-xl leading-relaxed shadow-lg ">
-        <ul className="list-disc list-inside space-y-2 text-gray-700">
-          <li>
-            Feasibility study and detail design of water supply and sanitation
-            projects
-          </li>
-          <li>
-            Study and design of climate resilient water resource planning,
-            feasibility study and detail design of water supply and small scale
-            irrigation project
-          </li>
-          <li>
-            Feasibility study and detail design of small scale irrigation
-            projects (diversion weir, micro earth dam, pump irrigation systems)
-          </li>
-          <li>Contract administration and Construction supervision</li>
-          <li>
-            Water well drilling, construction, pumping test and rehabilitation
-            supervision
-          </li>
-          <li>Capacity building</li>
-          <li>
-            Solar and wind water pumping study and design works to replace
-            diesel driven water supply system
-          </li>
-          <li>
-            Mid Term and Terminal Evaluation of Water and Sanitation Projects
-          </li>
-          <li>
-            Water Resources potential evaluation and mapping (i.e. hydrological,
-            hydrogeological, geotechnical and geophysical investigations and
-            mapping)
-          </li>
-          <li>
-            Natural resources management study, preparation of conservation plan
-            and strategy design
-          </li>
-          <li>Land use mapping and land suitability evaluation/analysis</li>
-          <li>Socio-economic study and baseline survey</li>
-          <li>
-            Participatory Geographic information System (GIS) & Remote Sensing
-            (RS) applications
-          </li>
-          <li>Monitoring and evaluation</li>
-          <li>Environmental and Social Impact Assessment (ESIA)</li>
-          <li>
-            Training and research in the areas of water resources, water supply
-            management and environment
-          </li>
-        </ul>
-      </div>
+      <TechnicalQualification />
     </div>
   );
 }

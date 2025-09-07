@@ -40,7 +40,7 @@ export default function NavigationBar() {
 
         {listOfLinks.map((item, index) => (
           <Link
-            key={item.name}
+            key={index}
             href={item.link}
             className={`mx-4 px-2 py-1  rounded ${
               pathname === item.link
